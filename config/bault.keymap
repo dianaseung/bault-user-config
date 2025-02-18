@@ -3,6 +3,14 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
+#define COMBO(NAME, BINDINGS, KEYPOS) \
+  combo_##NAME { \
+    timeout-ms = <50>; \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <0>; \
+  };
+
 / {
 
     behaviors {
@@ -19,6 +27,13 @@
         };
     };
 
+
+    combos {
+                compatible = "zmk,combos";
+
+                COMBO(esckey, &kp ESC, KC_W, KC_F)
+                COMBO(tabkey, &kp TAB, 0 1)
+        };
 
     keymap {
         compatible = "zmk,keymap";
