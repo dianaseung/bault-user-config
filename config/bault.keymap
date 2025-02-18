@@ -29,11 +29,14 @@
 
 
     combos {
-                compatible = "zmk,combos";
-
-                COMBO(esckey, &kp ESC, KC_W, KC_F)
-                COMBO(tabkey, &kp TAB, 0 1)
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp TAB>;
         };
+    };
+
 
     keymap {
         compatible = "zmk,keymap";
