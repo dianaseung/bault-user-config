@@ -46,25 +46,25 @@
 &kp Q           &kp W           &kp E        &kp R             &kp T  &kp Y        &kp U              &kp I        &kp O            &kp P                    &kp BACKSPACE
 &hm LEFT_ALT A  &hm LEFT_GUI S  &hm LCTRL D  &hm LEFT_SHIFT F  &kp G  &kp H        &hm RIGHT_SHIFT J  &hm RCTRL K  &hm RIGHT_GUI L  &hm RIGHT_ALT SEMICOLON
 &kp Z           &kp X           &kp C        &kp V             &kp B  &kp N        &kp M              &kp COMMA    &kp PERIOD       &kp SLASH
-&kp N0          &mo 3           &tog 1       &lt 1 SPACE              &lt 2 SPACE                     &tog 2       &mo 2            &kp N0
+&kp N0          &mo 3           &to 1        &lt 1 SPACE              &lt 2 SPACE                     &to 2        &mo 2            &kp N0
             >;
         };
 
         layer_1 {
             bindings = <
-&kp HOME        &mmv MOVE_UP    &kp END          &trans     &trans          &trans           &kp N7        &kp N8        &kp N9        &kp N0     &studio_unlock
+&kp HOME        &mmv MOVE_UP    &kp END          &trans     &trans          &trans           &kp N7        &kp N8        &kp N9        &kp N0     &kp BACKSLASH
 &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp N4        &kp N5        &kp NUMBER_6  &kp EQUAL
 &trans          &trans          &trans           &mkp RCLK  &trans          &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp MINUS     &kp EQUAL
-&kp N0          &trans          &tog 0           &trans                     &trans                         &tog 0        &trans        &kp N0
+&kp N0          &trans          &to 0            &trans                     &trans                         &to 0         &trans        &kp N0
             >;
         };
 
         connectivity {
             bindings = <
-&trans        &trans  &trans  &trans  &trans  &trans          &trans          &trans        &trans           &trans  &bootloader
-&out OUT_TOG  &trans  &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&bt BT_NXT    &trans  &trans  &trans  &trans  &trans          &trans          &trans        &trans           &trans
-&kp N0        &trans  &trans  &trans          &trans                          &trans        &trans           &kp N0
+&studio_unlock  &trans  &trans  &trans  &trans  &trans          &trans          &trans        &trans           &trans  &bootloader
+&out OUT_TOG    &trans  &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&bt BT_NXT      &trans  &trans  &trans  &trans  &trans          &trans          &trans        &trans           &trans
+&kp N0          &trans  &to 0   &trans          &trans                          &to 0         &trans           &kp N0
             >;
         };
     };
