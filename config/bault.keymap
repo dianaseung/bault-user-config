@@ -31,10 +31,35 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_esc {
+        combo_tab {
             timeout-ms = <50>;
             key-positions = <0 1>;
             bindings = <&kp TAB>;
+        };
+
+        combo_apos {
+            bindings = <&kp APOS>;
+            key-positions = <19 18>;
+        };
+
+        combo_semicolon {
+            bindings = <&kp SEMI>;
+            key-positions = <17 18>;
+        };
+
+        combo_esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <1 14>;
+        };
+
+        combo_lbrace {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <12 14>;
+        };
+
+        combo_rbrace {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <13 14>;
         };
     };
 
